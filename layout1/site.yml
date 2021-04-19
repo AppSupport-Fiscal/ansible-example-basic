@@ -1,0 +1,7 @@
+---
+- name: Example playbook
+  hosts: all
+  tasks:
+    - name: Ensure nodes are able to run ansible commands
+      ping:
+
