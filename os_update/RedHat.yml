@@ -4,4 +4,8 @@
   yum:
     name: "*"
     state: latest
+  register: yum_output
+- name: our debug 
+  debug:
+    msg: "{{ yum_output }}"
 
