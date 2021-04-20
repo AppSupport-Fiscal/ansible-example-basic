@@ -1,0 +1,7 @@
+---
+- name: update os packages
+  become: true
+  yum:
+    name: "*"
+    state: latest
+
