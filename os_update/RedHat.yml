@@ -1,5 +1,5 @@
 ---
-- name: update latest os packages
+- name: Update latest OS packages
   become: true
   yum:
     name: "*"
