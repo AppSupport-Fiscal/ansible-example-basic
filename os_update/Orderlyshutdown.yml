@@ -1,0 +1,11 @@
+--- 
+#Orderly Shutdown Playbook
+- name: shutdown machines
+  hosts: all
+  serial: 1
+  tasks:
+    - name: check for start requirements
+      shell:
+        cmd: "echo reboot required"
+      register: rebootrquired
+      
